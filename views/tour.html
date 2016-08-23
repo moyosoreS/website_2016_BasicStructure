@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <ul class="w3-navbar w3-black">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="band.html">Band</a></li>
+    <li><a href="tour.html">Tour</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:400px;height:400px"></div>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <INPUT TYPE="hidden" name="cmd" value="_xclick">
+</form>
+
+
+<br><br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" style="height:200px">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+var mapCanvas = document.getElementById("map");
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+}
+var map = new google.maps.Map(mapCanvas, mapOptions);
+</script>
+
+</body>
+</html>
